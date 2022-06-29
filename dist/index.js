@@ -9001,17 +9001,17 @@ var __webpack_exports__ = {};
 (() => {
 const core=__nccwpck_require__(2186);
 const github=__nccwpck_require__(5438);
-const {context}=__nccwpck_require__(5438);
 
 async function run() {
     console.log("Hello World2...... !!!");
-
+    const context = github.context;
     const GITHUB_TOKEN=core.getInput('GITHUB_TOKEN');
     const octokit=github.getOctokit(GITHUB_TOKEN);
 
     await octokit.rest.issues.createComment({
         ...context.repo,
-         body: 'Hello, Thank you for creating Pull request.'
+        issue_number:context.payload.pull_request.number,
+        body: 'Hello, Thank you for creating Pull request.'
     });
 }
 
