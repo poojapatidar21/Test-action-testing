@@ -1,0 +1,15 @@
+name: "Hello World Action"
+description: "Say Hello World on new PR"
+author: "Pooja Patidar"
+
+inputs:
+GITHUB_TOKEN:
+description: 'Github Token'
+required: true
+TENOR_TOKEN:
+description: 'Tenor API Token'
+required: true
+
+runs:
+using: 'node16'
+main: 'dist/index.js'

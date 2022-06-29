@@ -1,0 +1,23 @@
+{
+  "name": "testing-repository-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poojapatidar21/Testing-Repository-Action.git"
+  },
+  "author": "Pooja patidar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poojapatidar21/Testing-Repository-Action/issues"
+  },
+  "homepage": "https://github.com/poojapatidar21/Testing-Repository-Action#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}
