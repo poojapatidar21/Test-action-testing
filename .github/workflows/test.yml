@@ -1,11 +1,10 @@
-name: "Test"
+name: Test
 on:
 pull_request:
-types:[opened]
-
+types: [opened]
 jobs:
 test:
-runs-on:ubuntu-latest
+runs-on: ubuntu-latest
 steps:
--uses:sctions/checkout@v2
--uses:./
+-uses: sctions/checkout@v2
+-uses: ./
