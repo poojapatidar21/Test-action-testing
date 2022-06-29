@@ -3,7 +3,7 @@ const github=require('@actions/github');
 const {context}=require('@actions/github');
 
 async function run() {
-    console.log("Hello World !!!");
+    console.log("Hello World2...... !!!");
 
     const GITHUB_TOKEN=core.getInput('GITHUB_TOKEN');
     const octokit=github.getOctokit(GITHUB_TOKEN);
