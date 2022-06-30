@@ -24,7 +24,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Hello-world-github-action-solution
-        uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone
+        uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone@v2
         with: 
             who-to-greet: "Pooja"
       - name: Get the output time
