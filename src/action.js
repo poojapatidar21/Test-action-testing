@@ -1,17 +1,15 @@
 const core=require('@actions/core');
 const github=require('@actions/github');
 
-async function run() {
-    console.log("Hello World2...... !!!");
-    const context = github.context;
-    const GITHUB_TOKEN=core.getInput('GITHUB_TOKEN');
-    const octokit=github.getOctokit(GITHUB_TOKEN);
+try {
+    const name=core.getInput('who-to-greet');
+    console.log(`Hello ${name}`);
 
-    await octokit.rest.issues.createComment({
-        ...context.repo,
-        issue_number:context.payload.pull_request.number,
-        body: 'Hello, Thank you for creating Pull request.'
-    });
+    const time=(new Date()).toTimeString();
+    core.setOutput("time",time);
+
+    const payload=JSON.stringify(github.context.payload,undefined,2)
+        console.log(`the event payloaad: ${payload}`);
+} catch(error){
+    core.setFailed(error.message);
 }
-
-run();
