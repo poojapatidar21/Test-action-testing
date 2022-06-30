@@ -24,8 +24,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Hello-world-github-action-solution
-        uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone2
-
+        uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone3
 
         with: 
             who-to-greet: "Pooja"
