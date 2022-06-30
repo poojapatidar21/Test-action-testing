@@ -8,9 +8,8 @@ jobs:
     name: A job to say hello
     steps:
     - name: Hello-world-github-action-solution
-      uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone 
+      uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone
       with: 
           who-to-greet: "Pooja"
     - name: Get the output time
       run: echo "The time was ${{steps.hello.outputs.time }}"
-      
