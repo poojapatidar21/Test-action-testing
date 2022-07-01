@@ -24,11 +24,19 @@ jobs:
         uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone3
         with: 
             who-to-greet: "Pooja"
-      - name: Test
+      - name: Test password secret
         run:
           echo $PASS_SECRET
         env:
           PASS_SECRET: ${{ secrets.PASSWORD_SECRET }}
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
 
+      - name: Login Azure
+        uses: Azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - uses: Azure/get-keyvault-secrets@v1
+        with: 
+          keyvault: "Keyvault-1-basic"
+          secrets: 'mySecret'
+        id: myGetSecretAction
+      
