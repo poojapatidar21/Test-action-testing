@@ -31,9 +31,3 @@ jobs:
           PASS_SECRET: ${{ secrets.PASSWORD_SECRET }}
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-
-      - name: Sample Azure action
-        with: # Set Azure credentials secret as an input
-          credentials: ${{ secrets.AZURE_CREDENTIALS }}
-        env: # Or as an environment variable
-          credentials: ${{ secrets.AZURE_CREDENTIALS }}
