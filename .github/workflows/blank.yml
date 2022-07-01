@@ -15,19 +15,19 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-
       - name: Hello-world-github-action-solution
         uses: poojapatidar21/Hello-World-Github-Action-Solution@hello-everyone3
         with: 
             who-to-greet: "Pooja"
+
       - name: Test password
         run:
           echo $PASS_SECRET
         env:
           PASS_SECRET: ${{ secrets.PASSWORD_SECRET }}
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+      - name: print azure credentials
+        run:
+          echo $AZURE_SECRET
+        env:
+          AZURE_SECRET: ${{ secrets.AZURE_CREDENTIALS }}
