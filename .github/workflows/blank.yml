@@ -26,8 +26,15 @@ jobs:
         env:
           PASS_SECRET: ${{ secrets.PASSWORD_SECRET }}
 
-      - name: print azure credentials
+      - name: Print azure credentials
         run:
           echo $AZURE_SECRET
         env:
           AZURE_SECRET: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure Secrets
+        uses: Azure/get-keyvault-secrets@v1
+        with: 
+          keyvault: "keyvault-2-basic"
+          secrets: 'PASSWORD-SECRET'
+        id: myGetSecretAction
