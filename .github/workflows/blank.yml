@@ -19,6 +19,11 @@ jobs:
         uses: poojapatidar21/Test-Action-Solution@Test-V1
         with: 
             who-to-greet: "Pooja"
+            
+      - name: Test Action-Solution
+        uses: poojapatidar21/Test-Action-Solution@Test-V1
+        with: 
+
             ConnectedServiceName: "Maven"
 
       - name: Test password
