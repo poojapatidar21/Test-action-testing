@@ -16,10 +16,21 @@ jobs:
         run: echo Hello, world!
 
       - name: Test Action-Solution
-        uses: poojapatidar21/Test-Action-Solution@Test-V2
+        uses: poojapatidar21/Test-Action-Solution@Test-V3
         with: 
-            who-to-greet: "Pooja"
-            ConnectedServiceName: "Maven"
+            ConnectedServiceName: "Azure"
+            Intent: "PackageDistribution"
+            ContentType: "Maven"
+            PackageLocation: "a:/D/Release/filefolder"
+            Owners: "xyz@microsoft.com"
+            Approvers: "abc@microsoft.com"
+            ServiceEndpointUrl: "https://api.esrp.microsoft.com"
+            MainPublisher:
+            DomainTenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47"
+            ContentOrigin: "azeus"
+            ProductState: "Currentss"
+            Audience: "Workflow.A_S_AV_PackageManager"
+
 
       - name: Test password
         run:
