@@ -18,5 +18,5 @@ jobs:
       - name: Test Action-Solution
         uses: poojapatidar21/Test-Action-Solution@Test-V5
         with: 
-            ConnectedServiceName: "Azure"
+            ConnectedServiceName: "72f988bf-86f1-41af-91ab-2d7cd011db47"
             
