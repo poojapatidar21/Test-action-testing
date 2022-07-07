@@ -16,7 +16,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Test Action-Solution
-        uses: poojapatidar21/Test-Action-Solution@Test-V4
+        uses: poojapatidar21/Test-Action-Solution@Test-V5
         with: 
             ConnectedServiceName: "Azure"
             
