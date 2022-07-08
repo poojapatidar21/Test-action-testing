@@ -16,7 +16,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Test Action-Solution
-        uses: poojapatidar21/Test-Action-Solution@test-v11-1
+        uses: poojapatidar21/Test-Action-Solution@test-v11-2
 
         with: 
             ConnectedServiceName: "72f988bf-86f1-41af-91ab-2d7cd011db47"
