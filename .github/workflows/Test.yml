@@ -16,20 +16,21 @@ jobs:
         run: echo Hello, world!
 
       - name: Test Action-Solution
-        uses: poojapatidar21/Test-Action-Solution@test-v11-3
+        uses: poojapatidar21/Test-Action-Solution@test-release-1
+
 
         with: 
-            ConnectedServiceName: "72f988bf-86f1-41af-91ab-2d7cd011db47"
+            ConnectedServiceName: "release-test"
             Intent: "PackageDistribution"
             ContentType: "Maven"
-            PackageLocation: "a:/D/Release/filefolder"
+            PackageLocation: "src/pacman-app-1.1"
             Owners: "xyz@microsoft.com"
             Approvers: "abc@microsoft.com"
             ServiceEndpointUrl: "https://api.esrp.microsoft.com"
-            MainPublisher: "pooja"
+            MainPublisher: "ESRPRELTEST"
             DomainTenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47"
             ContentOrigin: "azeus"
-            ProductState: "Currentss"
+            ProductState: "new"
             Audience: "Workflow.A_S_AV_PackageManager"
 
 
