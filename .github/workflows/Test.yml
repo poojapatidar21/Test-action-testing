@@ -16,7 +16,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Test Action-Solution
-        uses: poojapatidar21/Test-Action-Solution@test-release-2
+        uses: poojapatidar21/Test-Action-Solution@test-release-3
 
 
         with: 
