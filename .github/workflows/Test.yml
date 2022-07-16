@@ -24,7 +24,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Test Action-Solution
-        uses: poojapatidar21/Test-Action-Solution@test-1-2
+        uses: poojapatidar21/Test-Action-Solution@Test-Release-1
 
         with: 
             ConnectedServiceName: "testReleaseServiceConnection"
