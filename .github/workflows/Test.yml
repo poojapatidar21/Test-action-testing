@@ -27,14 +27,14 @@ jobs:
         uses: poojapatidar21/Test-Action-Solution@test-1-2
 
         with: 
-            ConnectedServiceName: "release-test"
+            ConnectedServiceName: "testReleaseServiceConnection"
             Intent: "PackageDistribution"
             ContentType: "Maven"
-            PackageLocation: "src/pacman-app-1.1"
-            Owners: "xyz@microsoft.com"
-            Approvers: "abc@microsoft.com"
+            PackageLocation: "package/pacman-app-1.1"
+            Owners: "'arugupta@microsoft.com"
+            Approvers: "sheshagiri.mallipedhi@microsoft.com"
             ServiceEndpointUrl: "https://api.esrp.microsoft.com"
-            MainPublisher: "ESRPRELTEST"
+            MainPublisher: "'ESRPRELPACMANTEST'"
             DomainTenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47"
             ContentOrigin: "azeus"
             ProductState: "new"
