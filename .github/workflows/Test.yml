@@ -28,7 +28,7 @@ jobs:
             ConnectedServiceName: "testReleaseServiceConnection"
             Intent: "PackageDistribution"
             ContentType: "Maven"
-            PackageLocation: "package/pacman-app-1.1"
+            PackageLocation: "package/ValidArtefacts"
             Owners: "arugupta@microsoft.com"
             Approvers: "shmallip@microsoft.com,skonidena@microsoft.com"
             ServiceEndpointUrl: "https://api.esrp.microsoft.com"
