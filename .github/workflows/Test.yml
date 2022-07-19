@@ -10,13 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      KVAUTHSECRET: ${{ secrets.KVAUTHSECRET }}
-      KVAUTHCLIENT: ${{ secrets.KVAUTHCLIENT }}
-      KVTENANTID: ${{secrets.KVTENANTID}}
-      KVNAME: ${{secrets.KVNAME}}
-      AUTHCERTNAME: ${{secrets.AUTHCERTNAME}}
-      SIGNCERTNAME: ${{secrets.SIGNCERTNAME}}
+
       
     steps:
       - uses: actions/checkout@v3
