@@ -1,0 +1,8 @@
+.jar binary
+.pom binary
+.jar.sha256 binary
+.jar.asc.sha256 binary
+.jar.asc binary
+.pom.asc.sha256 binary
+.pom.asc binary
+.pom.sha256 binary
